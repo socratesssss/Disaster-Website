@@ -10,7 +10,7 @@ function Dashboard() {
   return (
    <section className='relative'>
     <NavBottom children='Sort By: Date modified'>
-        <Button className='bg-[#F26922] text-white'>
+        <Button className='bg-[#F26922]  hover:bg-orange-600 text-white'>
         Cypher AI
         </Button>
     </NavBottom>

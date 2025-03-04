@@ -64,3 +64,20 @@ export  const dashboardCard = [
    
   
 ]
+export const NewCardData = [
+    {
+        img:'/Frame(2).svg',
+        title:'What type of incident?',
+        p:'Choose the category that best describes the incident.',
+    },
+    {
+        img:'/Frame(3).svg',
+        title:'Tell us about the incident?',
+        p:'Let’s connect the dots and see where to start.',
+    },
+    {
+        img:'/Frame(4).svg',
+        title:'Where did the incident occur?',
+        p:'Lorem ipsum dolar sit general sac mascho werho',
+    },
+]
