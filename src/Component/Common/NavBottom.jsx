@@ -10,7 +10,7 @@ function NavBottom({ children }) {
     const pathSegments = location.pathname.split("/").filter(Boolean);
 
     return ( 
-        <div className='pt-8 pb-4 bg-[#E4E4E7]'>
+        <div className='pt-8 pb-4 bg-[#F1F1F3]'>
             <Container className="flex justify-between items-center">
                 <div>
                     {/* ✅ Show welcome message when on home page */}
@@ -37,7 +37,14 @@ function NavBottom({ children }) {
                             })}
                         </nav>
                     )}
-                    <Title>Dashboard</Title>
+                    {
+                        location.pathname ==='/'?(
+                            <Title>Dashboard</Title>
+                        ):(
+                            <Title>{pathSegments}</Title>
+                        )
+                    }
+                   
                 </div>
 
                 <div className='flex gap-[14px]'>

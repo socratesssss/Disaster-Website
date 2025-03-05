@@ -14,7 +14,7 @@ function Navbar() {
    
 
     return (
-        <section className="bg-[#E4E4E7] pb-4">
+        <section className="bg-[#F1F1F3] pb-4">
             <div className="border-accent  border-b-3">
                 <Container className="">
                     {/* Top Section */}

@@ -1,12 +1,15 @@
 import React from 'react'
-import Container from './Share/Conatiner'
-import Title from './Share/Title'
-import Peragrap from './Share/Peragrap'
-import NewCard from './Share/NewCard';
-import { NewCardData } from './DAtaBase';
-import Button from './Share/Button';
+import Container from '../Share/Conatiner'
+import Title from '../Share/Title'
+import Peragrap from '../Share/Peragrap'
+import NewCard from '../Share/NewCard';
+import { NewCardData } from '../DAtaBase';
+import Button from '../Share/Button';
+import { useNavigate } from 'react-router-dom';
+
 
 function NewIncident() {
+  const navigate = useNavigate();
   return (
    <section className='h-screen'>
     <Container className='flex flex-col justify-center gap-[33px] items-center mt-17'>
@@ -25,7 +28,7 @@ function NewIncident() {
         }
        </div>
 
-       <Button className='bg-[#F26922]  hover:bg-orange-600  text-xs my-12 px-9 font-bold text-white'>Get started</Button>
+       <Button onClick={()=> (navigate('/Incident/NewIncident/GetStarted'))} className='bg-[#F26922]  hover:bg-orange-600  text-xs my-12 px-9 font-bold text-white'>Get started</Button>
     </Container>
 
 
