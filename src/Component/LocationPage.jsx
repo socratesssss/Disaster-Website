@@ -3,12 +3,14 @@ import Container from './Share/Conatiner'
 import Peragrap from './Share/Peragrap'
 import { locationCard } from './DAtaBase'
 import CardLast from './Share/CardLast'
+import { Activities } from './DAtaBase'
+import { Documents } from './DAtaBase'
 
 function LocationPage() {
   return (
     <section>
 
-      <Container className='grid gap-10 py-10 grid-cols-12 '>
+      <Container className='grid gap-10 py-10  pb-40 grid-cols-12 '>
         {/* right section */}
         <div className='col-span-7'>
 
@@ -55,17 +57,58 @@ function LocationPage() {
           </div>
           {/* Activities */}
 
-          <div className='py-10'>
+          <div className='py-10 border-b-2 border-[#E4E4E7]'>
             {/* Card */}
-            <div className='flex bg-[#F4F4F5] p-3 rounded-[10px] gap-[10]'> 
-              <img src="/Group 1171276280.svg" className='w-[78px] h-[78px] rounded-[10px] object-cover' alt="" />
-              <div className='space-y-[5px] px-4'>
-              <h1 className='text-base text-black font-bold'>Activity name</h1>
-             
-              <Peragrap className='text-sm'>16.12212, -122.1424</Peragrap>
-              <h1 className='text-base text-black font-bold'>$1,456,654.00</h1>
-              </div>
+            <div className='flex  justify-between pb-4'>
+              <Peragrap className='text-sm font-bold  text-black'>
+                Locations
+              </Peragrap>
+              <a href="" className='underline text-secondary  underline-offset-4'> See all</a>
+            </div>
+            <div className='space-y-[15px]'>
+              {Activities.map((item, i) => (
+                <div key={i} className='flex bg-[#F4F4F5] p-3 rounded-[10px] gap-[10]'>
+                  <img src={item.img} className='w-[78px] h-[78px] rounded-[10px] object-cover' alt="" />
+                  <div className='space-y-[5px] px-4'>
+                    <h1 className='text-base text-black font-bold'>{item.title}</h1>
 
+                    <Peragrap className='text-sm'>{item.des}</Peragrap>
+                    <h1 className='text-base text-black font-bold'>{item.price}</h1>
+                  </div>
+
+                </div>
+              ))
+
+              }
+            </div>
+
+
+          </div>
+
+          {/*  */}
+          <div className='py-10 border-b-2 border-[#E4E4E7]'>
+            {/* Card */}
+            <div className='flex  justify-between pb-4'>
+              <Peragrap className='text-sm font-bold  text-black'>
+                Locations
+              </Peragrap>
+              <a href="" className='underline text-secondary  underline-offset-4'> See all</a>
+            </div>
+            <div className='space-y-[15px]'>
+              {Documents.map((item, i) => (
+                <div key={i} className='flex bg-[#F4F4F5] p-3 rounded-[10px] gap-[10]'>
+                  <img src={item.img} className='w-[78px] h-[78px] rounded-[10px] object-cover' alt="" />
+                  <div className='space-y-[5px] px-4'>
+                    <h1 className='text-base text-black font-bold'>{item.title}</h1>
+
+                    <Peragrap className='text-sm'>{item.des}</Peragrap>
+                    <h1 className='text-base text-black font-bold'>{item.price}</h1>
+                  </div>
+
+                </div>
+              ))
+
+              }
             </div>
 
 

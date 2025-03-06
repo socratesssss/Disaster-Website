@@ -112,4 +112,35 @@ export const locationCard = [
 ]
 
 
+
+export const Activities =[
+    {
+        img:"Rectangle42010(1).svg",
+        title:"Activity name",
+        des:"16.12212, -122.1424",
+        price:"$1,456,654.00"
+    },
+    {
+        img:"Rectangle42010(1).svg",
+        title:"Activity name",
+        des:"16.12212, -122.1424",
+        price:"$1,456,654.00"
+    },
+]
+export const Documents =[
+    {
+        img:"Rectangle42010(1).svg",
+        title:"Document name",
+        des:"16.12212, -122.1424",
+        price:"$1,456,654.00"
+    },
+    {
+        img:"Rectangle42010(1).svg",
+        title:"Document name",
+        des:"16.12212, -122.1424",
+        price:"$1,456,654.00"
+    },
+]
+
+
 export const Locations = `https://s3-alpha-sig.figma.com/img/67b2/5fbc/8e99a5f67741079075953638a9090f7f?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ktbiwbfm0e87y0RkYfxPg-I5QRW7cvwsfk1UoaI8Vkgjwd2OCuFG35XzZVgXYiDZWsMneESfOylcOQ2LrEV8N3viwNAOrS~n3TLas0sXiOigMwYCWqNq6u0r3cLmm7505vPC2~3WS~UXWsUs-nVIKZDUjN27Bl5kselUv29irRlSBE9OEks4eGxRJaAlriozSVS0sz~VX~v2EzSFkp0d-1ISRrageGQ34wqHBRCWzDV-UgopFsfN4pwF3xZB2awYVOzneRpTmf2Rt3076ziV3Hp30fQNwFPHfu7iEjslK8UonlGlPM5tyKKINsh9MkcgYTmmDJ0xOIkxqb8rpaBoCw__`
