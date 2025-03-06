@@ -12,7 +12,7 @@ function Page4() {
     const style = Locations;
     return (
         <section>
-            <SecondNav onClick1={() => navigate('/Incidents/NewIncident/GetStarted/Page3')}>
+            <SecondNav onClick2={() => navigate('/Locations')} onClick1={() => navigate('/Incidents/NewIncident/GetStarted/Page3')}>
                 Finished
             </SecondNav>
 
