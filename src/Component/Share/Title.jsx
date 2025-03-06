@@ -3,7 +3,7 @@ import cn from '../utiliti/clsx'
 
 function Title({className,children}) {
   return (
-   <h1 className={cn("text-[26px] text-black font-bold text-xl",className)}>{children}</h1>
+   <h1 className={cn(" text-lg md:text-[26px] text-black font-bold ",className)}>{children}</h1>
   )
 }
 

@@ -18,7 +18,7 @@ function Navbar() {
             <div className="border-accent  border-b-3">
                 <Container className="">
                     {/* Top Section */}
-                    <div className="flex justify-between  items-center w-full">
+                    <div className="md:flex hidden justify-between  items-center w-full">
                         {/* Logo */}
                         <div>
                             <img src="/logo.svg" className="w-[131px] h-auto" alt="Logo" />

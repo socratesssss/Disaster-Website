@@ -11,15 +11,15 @@ function NavBottom({ children }) {
 
     return ( 
         <div className='pt-8 pb-4 bg-[#F1F1F3]'>
-            <Container className="flex justify-between items-center">
+            <Container className="flex justify- gap-2 items-center">
                 <div>
                     {/* ✅ Show welcome message when on home page */}
                     {location.pathname === "/" ? (
-                       <Peragrap>Welcome back</Peragrap>
+                       <Peragrap >Welcome back</Peragrap>
                     ) : (
                         <nav className="flex items-center space-x-1 text-xs font-normal cursor-pointer text-[#71717A]">
                             {pathSegments.map((segment, index) => {
-                                const path = `/${pathSegments.slice(0, index + 1).join("/")}`;
+                                const path = `/${pathSegments.slice(0, index + 1).join(">")}`;
                                 const isLast = index === pathSegments.length - 1;
 
                                 return (
@@ -47,9 +47,9 @@ function NavBottom({ children }) {
                    
                 </div>
 
-                <div className='flex gap-[14px]'>
-                    <Button className='flex gap-1 max-h-[42px]'>
-                        <img src="./Frame.svg" className='w-[18px]' alt="Search Icon" /> Search Incident
+                <div className='flex gap-1 md:gap-[14px]'>
+                    <Button className='flex md:gap-1 max-h-[42px]'>
+                        <img src="./Frame.svg" className='md:w-[18px]' alt="Search Icon" /> Search Incident
                     </Button>
                     < Button>Sort By: Date modified</Button> 
 

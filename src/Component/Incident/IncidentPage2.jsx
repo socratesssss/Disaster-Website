@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SecondNav from '../Common/SecondNav';
 import { useNavigate } from 'react-router-dom';
 import Title from '../Share/Title';
 import Container from '../Share/Conatiner';
 import Button from '../Share/Button';
+
+
+
 import Framesvg from '../../../public/Framesvg';
 import Framesvg2 from '../../../public/Framesvg2';
 import Framesvg3 from '../../../public/Framesvg3';
@@ -24,7 +27,6 @@ import Framesvg17 from '../../../public/Framesvg17';
 import Framesvg18 from '../../../public/Framesvg18';
 
 function IncidentPage2() {
-  const navigate = useNavigate();
   const describesTheIncident = [
     { svg: Framesvg, title: 'Avalanche' },
     { svg: Framesvg2, title: 'Biological' },
@@ -46,24 +48,42 @@ function IncidentPage2() {
     { svg: Framesvg18, title: 'Wildfire' },
   ];
 
+  const navigate = useNavigate();
+  const [selected, setSelected] = useState([]);
+
+ 
+
+  const toggleSelection = (title) => {
+    setSelected((prevSelected) =>
+      prevSelected.includes(title)
+        ? prevSelected.filter((item) => item !== title)
+        : [...prevSelected, title]
+    );
+  };
+
   return (
     <section>
-      <SecondNav onClick1={() => navigate("/Incident/NewIncident")} onClick2={() => navigate("")}>
-        Next step
-      </SecondNav>
-      <Container className="flex flex-col justify-center items-center py-6">
+      <SecondNav onClick1={() => navigate("/Incident/NewIncident")} onClick2={() => navigate("")}>Next step</SecondNav>
+      <Container className="flex flex-col justify-center items-center py-16">
         <div className="space-y-[22px]">
           <Title className="text-2xl text-start">Which of these best describes the incident?</Title>
           <div className="grid grid-cols-4 gap-3">
-            {describesTheIncident.map((item, index) => (
-              <Button 
-                key={index} 
-                className="bg-[#F4F4F5] gap-3 w-[180px] h-[69px] hover:bg-[#F26922] text-secondary hover:text-white flex items-center justify-center group"
-              >
-                <item.svg className=" group-hover:text-white" />
-                {item.title}
-              </Button>
-            ))}
+            {describesTheIncident.map((item, index) => {
+              const isSelected = selected.includes(item.title);
+              return (
+                <Button 
+                  key={index} 
+                  className={`w-[180px] h-[69px] flex items-center justify-center gap-3 
+                    bg-${isSelected ? '[#F26922] hover:bg-[#F26922]' : '[#F4F4F5]'}
+                    text-${isSelected ? 'white' : 'secondary'}
+                    `}
+                  onClick={() => toggleSelection(item.title)}
+                >
+                  <item.svg className="group-hover:text-white" />
+                  {item.title}
+                </Button>
+              );
+            })}
           </div>
         </div>
       </Container>

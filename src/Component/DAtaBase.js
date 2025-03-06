@@ -1,3 +1,4 @@
+
 export const navItem = [
     { name: 'Dashboard', path: '/' },
     { name: 'Incidents', path: '/Incidents' },
@@ -64,6 +65,7 @@ export  const dashboardCard = [
    
   
 ]
+
 export const NewCardData = [
     {
         img:'/Frame(2).svg',
