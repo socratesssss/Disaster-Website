@@ -16,7 +16,7 @@ function SecondNav({ children,onClick1,onClick2 }) {
             <Container className="flex justify-between items-center">
                 <div className='flex justify-center items-center gap-[13px]'>
                     {/* ✅ Show welcome message when on home page */}
-                    <button onClick={()=>( navigate("/"))} className='p-2 border-[#E4E4E7] border-2 bg-white rounded-full'>
+                    <button onClick={()=>( navigate("/Incident/NewIncident"))} className='p-2 border-[#E4E4E7] border-2 bg-white rounded-full'>
                         <CloseIcon/>
 
                     </button>
@@ -39,8 +39,8 @@ function SecondNav({ children,onClick1,onClick2 }) {
 
                 <div className='flex gap-[14px]'>
                    
-                   <Button onClick={onClick1} className='px-12 font-bold text-secondary '>Back</Button>
-                   <Button onClick={onClick2} className='px-12 font-bold bg-[#F26922] text-white '>{children}</Button>
+                   <Button onClick={onClick1} className=' md:w-[139px] font-bold text-secondary '>Back</Button>
+                   <Button onClick={onClick2} className='md:w-[139px] font-bold bg-[#F26922] text-white '>{children}</Button>
 
                   
                    

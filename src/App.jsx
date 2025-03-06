@@ -8,6 +8,8 @@ import Incidents from './Component/Incidents';
 import NewIncident from './Component/Incident/NewIncident';
 import SecondNav from './Component/Common/SecondNav';
 import IncidentPage2 from './Component/Incident/IncidentPage2';
+import Page3 from './Component/Incident/Page3';
+import Page4 from './Component/Incident/Page4';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path='/Incidents' element={<Incidents/>}/>
         <Route path='/Incident/NewIncident' element={<NewIncident/>}/>
         <Route path='/Incident/NewIncident/GetStarted' element={<IncidentPage2/>}/>
+        <Route path='/Incidents/NewIncident/GetStarted/Page3' element={<Page3/>}/>
+        <Route path='/Incidents/NewIncident/GetStarted/Page3/Page4' element={<Page4/>}/>
 
      
       </Routes>

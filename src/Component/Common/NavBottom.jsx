@@ -11,7 +11,7 @@ function NavBottom({ children }) {
 
     return ( 
         <div className='pt-8 pb-4 bg-[#F1F1F3]'>
-            <Container className="flex justify- gap-2 items-center">
+            <Container className="flex justify-between gap-2 items-center">
                 <div>
                     {/* ✅ Show welcome message when on home page */}
                     {location.pathname === "/" ? (
