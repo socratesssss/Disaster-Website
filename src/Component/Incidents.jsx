@@ -16,7 +16,7 @@ function Incidents() {
       {/* ✅ Pass onClick properly */}
       <NavBottom>
         <Button 
-          onClick={() => navigate("/Incident/NewIncident")} 
+          onClick={() => navigate("/Incidents/NewIncident")} 
           className="bg-[#F26922] hover:bg-orange-600 text-white"
         >
           <AddIcon sx={{ fontSize: "16px" }} /> New Incident

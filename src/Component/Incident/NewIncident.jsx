@@ -28,7 +28,7 @@ function NewIncident() {
         }
        </div>
 
-       <Button onClick={()=> (navigate('/Incident/NewIncident/GetStarted'))} className='bg-[#F26922]  hover:bg-orange-600  text-xs my-12 px-9 font-bold text-white'>Get started</Button>
+       <Button onClick={()=> (navigate('/Incidents/NewIncident/GetStarted'))} className='bg-[#F26922]  hover:bg-orange-600  text-xs my-12 px-9 font-bold text-white'>Get started</Button>
     </Container>
 
 

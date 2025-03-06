@@ -9,7 +9,7 @@ function Page3() {
     const navigate = useNavigate();
   return (
     <section>
-         <SecondNav onClick2={()=>navigate('/Incident/NewIncident/GetStarted/Page3/Page4')} onClick1={()=>navigate('/Incident/NewIncident/GetStarted')}>Next step</SecondNav>
+         <SecondNav onClick2={()=>navigate('/Incidents/NewIncident/GetStarted/Page3/Page4')} onClick1={()=>navigate('/Incidents/NewIncident/GetStarted')}>Next step</SecondNav>
         <Container className='justify-center items-center flex '>
         <div className='w-2/3 my-17'>
 

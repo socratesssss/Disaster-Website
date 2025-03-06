@@ -20,8 +20,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Dashboard/>}/>
         <Route path='/Incidents' element={<Incidents/>}/>
-        <Route path='/Incident/NewIncident' element={<NewIncident/>}/>
-        <Route path='/Incident/NewIncident/GetStarted' element={<IncidentPage2/>}/>
+        <Route path='/Incidents/NewIncident' element={<NewIncident/>}/>
+        <Route path='/Incidents/NewIncident/GetStarted' element={<IncidentPage2/>}/>
         <Route path='/Incidents/NewIncident/GetStarted/Page3' element={<Page3/>}/>
         <Route path='/Incidents/NewIncident/GetStarted/Page3/Page4' element={<Page4/>}/>
 

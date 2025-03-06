@@ -63,7 +63,7 @@ function IncidentPage2() {
 
   return (
     <section>
-      <SecondNav onClick2={()=> navigate("/Incidents/NewIncident/GetStarted/Page3")} onClick1={() => navigate("/Incident/NewIncident")} >Next step</SecondNav>
+      <SecondNav onClick2={()=> navigate("/Incidents/NewIncident/GetStarted/Page3")} onClick1={() => navigate("/Incidents/NewIncident")} >Next step</SecondNav>
       <Container className="flex flex-col justify-center items-center py-16">
         <div className="space-y-[22px]">
           <Title className="text-2xl text-start">Which of these best describes the incident?</Title>
