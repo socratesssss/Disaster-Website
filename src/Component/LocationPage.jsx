@@ -48,7 +48,7 @@ function LocationPage() {
             </div>
 
 
-            <div className='grid grid-cols-3 gap-5'>
+            <div className='grid grid-cols-2 sm:grid-cols-3 gap-5'>
               {locationCard.map((item, i) => (
                 <CardLast key={i} img={item.img} P={item.P} price={item.price} Title={item.Title} />
               ))}
@@ -121,7 +121,7 @@ function LocationPage() {
             Incident Map
           </Peragrap>
 
-          <img src="LocationImg.svg" className='w-full h-[503px]' alt="LocationImg.svg" />
+          <img src="LocationImg.svg" className='w-full  sm:h-[503px]' alt="LocationImg.svg" />
 
           <Peragrap className='text-sm'>
             Start 19.1232, -118.233     End 19.3245, -119.2323

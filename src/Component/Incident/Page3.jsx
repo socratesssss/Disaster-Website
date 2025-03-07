@@ -11,7 +11,7 @@ function Page3() {
     <section>
          <SecondNav onClick2={()=>navigate('/Incidents/NewIncident/GetStarted/Page3/Page4')} onClick1={()=>navigate('/Incidents/NewIncident/GetStarted')}>Next step</SecondNav>
         <Container className='justify-center items-center flex '>
-        <div className='w-2/3 my-17'>
+        <div className='md:w-2/3 w-5/6 my-17'>
 
 
         <div className='space-y-5'>

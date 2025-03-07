@@ -12,12 +12,12 @@ function SecondNav({ children,onClick1,onClick2 }) {
     const navigate = useNavigate()
 
     return ( 
-        <div className='sm:pt-8 pb-4 bg-[#F1F1F3]'>
-            <Container className="flex justify-between items-center">
+        <div className='sm:pt-8 pb-2 sm:pb-4 bg-[#F1F1F3]'>
+            <Container className="flex  sm:gap-0 justify-between items-center">
                 <div className='flex justify-center items-center gap-[13px]'>
                     {/* ✅ Show welcome message when on home page */}
-                    <button onClick={()=>( navigate("/Incident/NewIncident"))} className='p-2 border-[#E4E4E7] border-2 bg-white rounded-full'>
-                        <CloseIcon/>
+                    <button onClick={()=>( navigate("/Incident/NewIncident"))} className='sm:p-2 p-1  border-[#E4E4E7] border-2 bg-white rounded-full'>
+                        <CloseIcon sx={{ fontSize: { xs: 24, sm: 30, } }}/>
 
                     </button>
                   
@@ -33,8 +33,8 @@ function SecondNav({ children,onClick1,onClick2 }) {
                     
                    
                 </div>
-                <div className='hidden'>
-                    <img src="/Load.svg" className='max-w-[567px]' alt="loading" />
+                <div className='hidden lg:block'>
+                    <img src="/Load.svg" className='lg:max-w-[567px]' alt="loading" />
                 </div>
 
                 <div className='flex gap-[14px]'>
@@ -45,7 +45,11 @@ function SecondNav({ children,onClick1,onClick2 }) {
                   
                    
                 </div>
+                
             </Container>
+            <div className='block p-3 lg:hidden'>
+                    <img src="/Load.svg" className='lmax-w-[567px]' alt="loading" />
+                </div>
         </div>
     );
 }

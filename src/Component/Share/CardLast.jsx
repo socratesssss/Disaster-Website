@@ -9,7 +9,7 @@ function CardLast({ img, Title, P, price }) {
         <div className='space-y-2  cursor-pointer'>
 
             < div className='relative '>
-                <img src={img} className='object-cover  rounded-[10px] object-cover  ' alt="" />
+                <img src={img} className='object-fit  rounded-[10px] object-cover w-full  ' alt="" />
 
 
                 <button className='rounded-[40px] gap-1 p-1 text-[10px] absolute top-1 right-1 bg-white py-1 border-none flex font-bold text-black'><img src="/cloud.svg" alt="" /> Blizzard</button>

@@ -87,25 +87,25 @@ export const NewCardData = [
 export const locationCard = [
     {
         img:"Rectangle42010(1).svg",
-        Title:"Rectangle 42010 (1).svg",
+        Title:"Whitechapel Rd.",
         P:"Tulare County,  Los Angles, CA 23415",
     price:"$1,456,654.00"
     },
     {
         img:"Group1171276280.svg",
-        Title:"Rectangle 42010 (1).svg",
+        Title:"Whitechapel Rd.",
         P:"Tulare County,  Los Angles, CA 23415",
     price:"$1,456,654.00"
     },
     {
         img:"Rectangle42010(1).svg",
-        Title:"Rectangle 42010 (1).svg",
+        Title:"Whitechapel Rd.",
         P:"Tulare County,  Los Angles, CA 23415",
     price:"$1,456,654.00"
     },
     {
         img:"Rectangle42010(1).svg",
-        Title:"Rectangle 42010 (1).svg",
+        Title:"Whitechapel Rd.",
         P:"Tulare County,  Los Angles, CA 23415",
     price:"$1,456,654.00"
     },
