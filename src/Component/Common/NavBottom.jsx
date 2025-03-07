@@ -12,7 +12,7 @@ function NavBottom({ children }) {
     return ( 
         <div className='md:pt-6 lg:pt-8 pb-4 bg-[#F1F1F3]'>
             <Container className="flex justify-between gap-2 items-center">
-                <div className='hidden lg:flex'>
+                <div className='hidden lg:flex flex-col'>
                     {/* ✅ Show welcome message when on home page */}
                     {location.pathname === "/" ? (
                        <Peragrap >Welcome back</Peragrap>
