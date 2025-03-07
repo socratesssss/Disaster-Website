@@ -36,7 +36,7 @@ function Dashboard() {
       }
 
       {
-        isOpen && <div className='w-[331px] h-[475px] bg-[#F4F4F5] fixed  bottom-24 sm:bottom-30 rounded-[12px] overflow-hidden right-8  sm:right-14'>
+        isOpen && <div className='w-[331px] h-[475px] bg-[#F4F4F5] fixed  bottom-24 sm:bottom-30 rounded-[12px] overflow-hidden right-3  sm:right-14'>
 
           <div className='bg-[#F26922]'>
             <h1 className='text-white font-bold text-lg py-4 px-3'>Chat with Cypher</h1>
