@@ -10,7 +10,7 @@ function LocationPage() {
   return (
     <section>
 
-      <Container className='grid gap-10 py-10  pb-40 grid-cols-12 '>
+      <Container className='md:grid flex flex-col-reverse gap-10 py-10  pb-40  grid-reverce md:grid-cols-12 '>
         {/* right section */}
         <div className='col-span-7'>
 

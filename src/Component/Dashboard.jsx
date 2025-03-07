@@ -13,7 +13,7 @@ function Dashboard() {
           Cypher AI
         </Button>
       </NavBottom>
-      <Container className='my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+      <Container className='my-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
         {dashboardCard.map((item, i) => (
           <Card key={i} img={item.img} des={item.des} price={item.price} title={item.title} />
         ))}
