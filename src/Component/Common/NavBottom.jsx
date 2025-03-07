@@ -10,9 +10,9 @@ function NavBottom({ children }) {
     const pathSegments = location.pathname.split("/").filter(Boolean);
 
     return ( 
-        <div className='pt-8 pb-4 bg-[#F1F1F3]'>
+        <div className='md:pt-6 lg:pt-8 pb-4 bg-[#F1F1F3]'>
             <Container className="flex justify-between gap-2 items-center">
-                <div>
+                <div className='hidden lg:flex'>
                     {/* ✅ Show welcome message when on home page */}
                     {location.pathname === "/" ? (
                        <Peragrap >Welcome back</Peragrap>
@@ -47,9 +47,9 @@ function NavBottom({ children }) {
                    
                 </div>
 
-                <div className='flex gap-1 md:gap-[14px]'>
+                <div className='flex gap-2 lg:gap-1 md:gap-[14px]'>
                     <Button className='flex md:gap-1 max-h-[42px]'>
-                        <img src="./Frame.svg" className='md:w-[18px]' alt="Search Icon" /> Search Incident
+                        <img src="./Frame.svg" className='w-3 md:w-[17px]' alt="Search Icon" /> Search Incident
                     </Button>
                     < Button>Sort By: Date modified</Button> 
 

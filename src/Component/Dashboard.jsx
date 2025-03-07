@@ -8,7 +8,7 @@ import Button from './Share/Button';
 function Dashboard() {
   return (
     <section className='relative'>
-      <NavBottom children='Sort By: Date modified'>
+      <NavBottom >
         <Button className='bg-[#F26922] hover:bg-orange-600 text-white'>
           Cypher AI
         </Button>

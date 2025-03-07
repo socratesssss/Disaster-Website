@@ -2,7 +2,7 @@ import React from 'react';
 
 function Framesvg({ className }) {
   return (
-    <svg width="26" height="25" viewBox="0 0 26 25"  fill="currentColor"  xmlns="http://www.w3.org/2000/svg">
+    <svg width="26" height="25" className={className}  viewBox="0 0 26 25"  fill="currentColor"  xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0_1_802)">
     <path d="M12.9999 6.2384C9.54718 6.2384 6.73828 9.04786 6.73828 12.5006C6.73828 15.9533 9.54718 18.7628 12.9999 18.7628C16.4521 18.7628 19.2615 15.9539 19.2615 12.5006C19.2615 9.0473 16.4521 6.2384 12.9999 6.2384Z" />
     <path d="M13.0001 4.3977C12.3253 4.3977 11.7783 3.85075 11.7783 3.17648V1.22177C11.7783 0.546944 12.3253 0 13.0001 0C13.6749 0 14.2219 0.546944 14.2219 1.22177V3.17648C14.2219 3.85075 13.6744 4.3977 13.0001 4.3977Z" />

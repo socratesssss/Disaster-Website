@@ -66,20 +66,20 @@ function IncidentPage2() {
       <SecondNav onClick2={()=> navigate("/Incidents/NewIncident/GetStarted/Page3")} onClick1={() => navigate("/Incidents/NewIncident")} >Next step</SecondNav>
       <Container className="flex flex-col justify-center items-center py-16">
         <div className="space-y-[22px]">
-          <Title className="text-2xl text-start">Which of these best describes the incident?</Title>
-          <div className="grid grid-cols-4 gap-3">
+          <Title className="sm:text-2xl text-xl text-start">Which of these best describes the incident?</Title>
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-3">
             {describesTheIncident.map((item, index) => {
               const isSelected = selected.includes(item.title);
               return (
                 <Button 
                   key={index} 
-                  className={`w-[180px] h-[69px] flex items-center justify-center gap-3 
+                  className={`sm:w-[180px] w-[100px] text-[10px] sm:text-xs h-[40px] sm:h-[69px] flex items-center justify-center gap-2 sm:gap-3 
                     bg-${isSelected ? '[#F26922] hover:bg-[#F26922]' : '[#F4F4F5]'}
                     text-${isSelected ? 'white' : 'secondary'}
                     `}
                   onClick={() => toggleSelection(item.title)}
                 >
-                  <item.svg className="group-hover:text-white" />
+                  <item.svg className="group-hover:text-white w-5 sm:w-6" />
                   {item.title}
                 </Button>
               );

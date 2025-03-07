@@ -12,7 +12,7 @@ function SecondNav({ children,onClick1,onClick2 }) {
     const navigate = useNavigate()
 
     return ( 
-        <div className='pt-8 pb-4 bg-[#F1F1F3]'>
+        <div className='sm:pt-8 pb-4 bg-[#F1F1F3]'>
             <Container className="flex justify-between items-center">
                 <div className='flex justify-center items-center gap-[13px]'>
                     {/* ✅ Show welcome message when on home page */}
@@ -25,7 +25,7 @@ function SecondNav({ children,onClick1,onClick2 }) {
                   
                     
                   
-                        <div>
+                        <div className='hidden lg:block'>
                             <Peragrap>Home - Incidents - New Incident</Peragrap>
                         <Title>New Incident</Title>
                         </div>
@@ -33,7 +33,7 @@ function SecondNav({ children,onClick1,onClick2 }) {
                     
                    
                 </div>
-                <div>
+                <div className='hidden'>
                     <img src="/Load.svg" className='max-w-[567px]' alt="loading" />
                 </div>
 

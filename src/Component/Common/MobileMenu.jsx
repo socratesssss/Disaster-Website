@@ -21,7 +21,7 @@ function MobileMenu({toggleMenu}) {
                 {/* Navigation Links */}
                 <div className="flex flex-col gap-6 pt-3 items-center">
                     {navItem.map((item, index) => (
-                        <div key={index}>
+                        <button onClick={toggleMenu} key={index}>
                             <Link
                                 to={item.path}
                                 className={`font-normal transition-all duration-300 text-accent text-sm p-2 underline-offset-4 ${
@@ -30,7 +30,7 @@ function MobileMenu({toggleMenu}) {
                             >
                                 {item.name}
                             </Link>
-                        </div>
+                        </button>
                     ))}
                 </div>
             </div>
