@@ -8,8 +8,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MobileMenu from './MobileMenu';
 
 function Navbar() {
-    const [isMenuOpen,setMenuOpen] = useState(false);
-    const toggleMenu = ()=> setMenuOpen((prev)=>!prev);
+    const [isMenuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = () => setMenuOpen((prev) => !prev);
 
     const location = useLocation();
 
@@ -19,7 +19,7 @@ function Navbar() {
     return (
         <section className="bg-[#F1F1F3] pb-4">
             <div className="border-accent  border-b-3">
-                <Container className="flex">
+                <Container className="flex justify-between">
                     {/* Top Section */}
                     <div className="flex justify-between  items-center w-full">
                         {/* Logo */}
@@ -29,32 +29,37 @@ function Navbar() {
 
                         {/* Navigation Links */}
                         <div className='lg:flex hidden'>
-                        <div className="flex items-center relative space-x-4">
-                            {navItem.map((item, index) => (
-                                <div className='py-8 ' key={index}>
-                                    <Link
-                                        to={item.path}
-                                        className={`font-normal transition-all duration-300  text-accent text-sm p-2 mb-20 underline-offset-4 ${location.pathname === item.path ? '!text-[#09090B] !font-bold' : ' hover:text-gray-600'
-                                            }`}
-                                    >
-                                        {item.name}
-                                    </Link>
-                                    {
-                                        location.pathname === item.path && <div className='w-18 h-[3px] absolute bottom-[-3px] rounded-[10px] bg-black mx-1'>
+                            <div className="flex items-center relative space-x-4">
+                                {navItem.map((item, index) => (
+                                    <div className='py-8 ' key={index}>
+                                        <Link
+                                            to={item.path}
+                                            className={`font-normal transition-all duration-300  text-accent text-sm p-2 mb-20 underline-offset-4 ${location.pathname === item.path ? '!text-[#09090B] !font-bold' : ' hover:text-gray-600'
+                                                }`}
+                                        >
+                                            {item.name}
+                                        </Link>
+                                        {
+                                            location.pathname === item.path && <div className='w-18 h-[3px] absolute bottom-[-3px] rounded-[10px] bg-black mx-1'>
 
-                                        </div>
-                                    }
-                                </div>
-                            ))}
-                        </div>
+                                            </div>
+                                        }
+                                    </div>
+                                ))}
+                                {/* User Info */}
 
-                        {/* User Info */}
-                        {
-                            userData.map((item, index) => (
-                                <UserInfo key={index} email={item.email} name={item.name} dp={item.dp} />
-                            ))
-                        }
+                            </div>
+                        
+
+
                         </div>
+                      <div className='lg:flex hidden'>
+                      {
+                                userData.map((item, index) => (
+                                    <UserInfo key={index} email={item.email} name={item.name} dp={item.dp} />
+                                ))
+                            }
+                      </div>
                     </div>
                     <div onClick={toggleMenu} className='flex lg:hidden items-center py-3 gap-2'>
 
@@ -71,7 +76,7 @@ function Navbar() {
 
                 </Container>
             </div>
-           { isMenuOpen &&  <MobileMenu toggleMenu={toggleMenu}/>}
+            {isMenuOpen && <MobileMenu toggleMenu={toggleMenu} />}
 
         </section>
     );

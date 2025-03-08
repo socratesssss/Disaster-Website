@@ -11,6 +11,8 @@ import IncidentPage2 from './Component/Incident/IncidentPage2';
 import Page3 from './Component/Incident/Page3';
 import Page4 from './Component/Incident/Page4';
 import LocationPage from './Component/LocationPage';
+import TodoApp from './Component/TodoApp';
+import MessengerBox from './Component/Common/MessengerBox';
 
 function App() {
   return (
@@ -26,7 +28,8 @@ function App() {
         <Route path='/Incidents/NewIncident/GetStarted/Page3' element={<Page3/>}/>
         <Route path='/Incidents/NewIncident/GetStarted/Page3/Page4' element={<Page4/>}/>
         <Route path='/Locations' element={<LocationPage/>}/>
-
+<Route path='/Activitie' element={<TodoApp/>}/>
+<Route path='/Document' element={<MessengerBox/>}/>
      
       </Routes>
     </Router>

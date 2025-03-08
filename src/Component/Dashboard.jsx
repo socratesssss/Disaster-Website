@@ -25,18 +25,18 @@ function Dashboard() {
         ))}
       </Container>
       {/* Floating Action Button */}
-      {isOpen ? <button onClick={toggler} className='fixed bottom-10 z-50 right-10 bg-gray-200 sm:w-16 w-10 h-10 sm:h-16 p-2 sm:p-3 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-400'>
+      {isOpen ? <button onClick={toggler} className='fixed bottom-5 z-50 right-10 bg-gray-200 sm:w-16 w-10 h-10 sm:h-16 p-2 sm:p-3 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-400'>
         <CloseIcon className='' />
       </button>
         :
-        <button onClick={toggler} className='fixed bottom-10 right-10 bg-orange-500 sm:w-16 w-10 h-10 sm:h-16 p-2 sm:p-3 rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600'>
+        <button onClick={toggler} className='fixed bottom-5 right-10 bg-orange-500 sm:w-16 w-10 h-10 sm:h-16 p-2 sm:p-3 rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600'>
           <img src='/C.svg' alt='Action' className='sm:w-10 w-6 h-6 sm:h-10' />
         </button>
 
       }
 
       {
-        isOpen && <div className='w-[331px] h-[475px] bg-[#F4F4F5] fixed  bottom-24 sm:bottom-30 rounded-[12px] overflow-hidden right-3  sm:right-14'>
+        isOpen && <div className='w-[331px] h-[475px] bg-[#F4F4F5] fixed  bottom-24 sm:bottom-10 sm:right-30 rounded-[12px] overflow-hidden right-3  '>
 
           <div className='bg-[#F26922]'>
             <h1 className='text-white font-bold text-lg py-4 px-3'>Chat with Cypher</h1>
